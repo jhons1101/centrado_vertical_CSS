@@ -1,0 +1,70 @@
+/* MÉTODO 1: centrado con padding */
+.contenedor {
+    background-color: #f2f2f2;
+    border: 1px solid rgb(15, 151, 151);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+/* MÉTODO 2: centrado con line-height y height */
+.contenedor {
+    background-color: #f2f2f2;
+    border: 1px solid rgb(15, 151, 151);
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 200px;
+    height: 200px;
+}
+.hijo {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+
+/* MÉTODO 3: centrado con position y translate */
+.contenedor {
+    background-color: #f2f2f2;
+    border: 1px solid rgb(15, 151, 151);
+    text-align: center;
+    font-size: 1.4em;
+    height: 200px;
+    position: relative;
+}
+.hijo {
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* MÉTODO 4: centrado con display table y table.cell */
+.contenedor {
+    background-color: #f2f2f2;
+    border: 1px solid rgb(15, 151, 151);
+    text-align: center;
+    font-size: 1.6em;
+    display: table;
+    height: 200px;
+}
+.hijo {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* MÉTODO 5: centrado con flexbox */
+.contenedor {
+    background-color: #f2f2f2;
+    border: 1px solid rgb(15, 151, 151);
+    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 50px;
+}
